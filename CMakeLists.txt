@@ -435,7 +435,7 @@ if(WITH_TURBOJPEG)
     target_include_directories(turbojpeg PUBLIC
       $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
       $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>
-      $<INSTALL_INTERFACE:>
+      $<INSTALL_INTERFACE:include>
     )
     set_target_properties(turbojpeg PROPERTIES
       SOVERSION ${TURBOJPEG_SO_MAJOR_VERSION} VERSION ${TURBOJPEG_SO_VERSION})
