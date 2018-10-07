@@ -419,6 +419,7 @@ if(WITH_SIMD)
   endif()
 else()
   add_library(simd OBJECT jsimd_none.c)
+  target_include_directories(simd PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 endif()
 
 if(WITH_JAVA)
